@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなただけのオリジナル「冨嶽三十六景」を作ろう!</title>
+    <script src="bundle.js"></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <canvas id="canvas" width="300" height="300"></canvas>
+        <h1 class="main-tit"><img src="./images/ui/tit-make.png" alt="あなただけのオリジナル「冨嶽三十六景」を作ろう!"></h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a id="explanationBtn" href=""><img src="./images/ui/btn-explanation.png" alt="説明を見る"></a></li>
+                <li><a id="retryBtn" href=""><img src="./images/ui/btn-retry.png" alt="はじめから"></a></li>
+                <li><a id="completeBtn" href=""><img src="./images/ui/btn-complete.png" alt="完成"></a></li>
+            </ul>
+        </nav>
+        <div id="explanationModal" class="explanation-modal hide">
+            <div id="explanationOverlay" class="overlay hide"></div>
+            <div class="explanation-img"><img src="./images/ui/img-explanation.png" alt="あなただけのオリジナル「冨嶽三十六景」を作ろう!"></div>
+            <div><a id="closeBtn" class="close-btn" href=""><img src="./images/ui/btn-close.png" alt=""></a></div>
+        </div>
+        <div id="retryModal" class="retry-modal hide">
+            <div id="retryOverlay" class="overlay hide"></div>
+            <div class="retry-tit"><img src="./images/ui/txt-retry.png" alt="はじめからやり直しますか？"></div>
+            <ul>
+                <li><a id="retryYesBtn" class="retry-yes-btn" href=""><img src="./images/ui/btn-yes.png" alt="はい"></a></li>
+                <li><a id="retryNoBtn" class="retry-no-btn" href=""><img src="./images/ui/btn-no.png" alt="いいえ"></a></li>
+            </ul>
+        </div>
+        <div id="completeModal" class="complete-modal hide">
+            <div id="completeOverlay" class="overlay hide"></div>
+            <div id="completeCanvasContainer" class="complete-canvas-container"></div>
+            <!-- <canvas id="exportCanvas" class="export-canvas"></canvas> -->
+            <ul>
+                <li class="complete-txt"><img src="./images/ui/txt-complete.png" alt="これで完成でいいですか？"></li>
+                <li><a id="completeYesBtn" class="complete-yes-btn" href=""><img src="./images/ui/btn-yes.png" alt="はい"></a></li>
+                <li><a id="completeNoBtn" class="complete-no-btn" href=""><img src="./images/ui/btn-no.png" alt="いいえ"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
